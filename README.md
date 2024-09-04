@@ -3,11 +3,11 @@
   <br>
   <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBGOGwh_y_E80VvZ2jtzfDiJFdsQXQKs3DVZOleRiO_AjXp-Hu" alt="Markdownify" width="200"></a>
   <br>
-  Markdownify
+    University Management Portal
   <br>
 </h1>
 
-<h4 align="center">A Student Management Software designed to bring most of the university related tasks to web<a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h4 align="center">A Student Management Software designed to bring most of the university related tasks to web<a href="https://nextjs.org/" target="_blank">Next.js</a>.</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
