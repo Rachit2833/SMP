@@ -7,7 +7,7 @@
   <br>
 </h1>
 
-<h4 align="center">A Student Management Software designed to bring most of the university related tasks to web<a href="https://nextjs.org/" target="_blank">Next.js</a>.</h4>
+<h4 align="center">A Student Management Software designed to bring most of the university related tasks to web <a href="https://nextjs.org/" target="_blank">Next.js</a>.</h4>
 
 
 
