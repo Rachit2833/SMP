@@ -6,7 +6,6 @@ function AssignmentUpload({ item, index, Assdata, data, }) {
    const [inputData, setInputData] = useState()
    const assignmentSubmittedDate = Assdata[0][`Assignment${index + 1}`]!==null ? Assdata[0][`Assignment${index + 1}`]?.submittedDate : null;
    const assignmentStatus = Assdata[0][`Assignment${index + 1}`] !== null ? Assdata[0][`Assignment${index + 1}`]?.status || "Not Submitted"  : "Not Submitted";
-   console.log(Assdata[0][`Assignment${index + 1}`],Assdata[0][`Assignment${index + 1}`]?.url,assignmentStatus,assignmentSubmittedDate);
    return (
       <form action={submitAssignment}>
          <div className={`assignment-container ${assignmentStatus === "Submitted" ? "submitted" : ""}`}>

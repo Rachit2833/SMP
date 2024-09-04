@@ -98,7 +98,7 @@ const Calendar = ({ currentDate, setCurrentDate, classes, events, extraClasse, f
                <ion-icon name="chevron-down-outline"></ion-icon>
             </span>
             {isSelectedYear && (
-               <div style={{ position: "absolute", border: "1px solid rgba(132, 139, 200, 0.18)", boxShadow: "0 2rem 3rem rgba(132, 139, 200, 0.18)", top: "2rem", zIndex: "1000", left: "10rem", padding: "1rem", borderRadius: "15px", backgroundColor: "white", height: "20rem", overflow: "auto" }}>
+               <div className='one'  style={{ width:"6rem" ,position: "absolute", border: "1px solid rgba(132, 139, 200, 0.18)", boxShadow: "0 2rem 3rem rgba(132, 139, 200, 0.18)", top: "3rem", zIndex: "1000", left: "11rem",textAlign:"center", padding: "1rem", borderRadius: "15px",  height: "20rem", overflow: "auto", }}>
                   <ul style={{ listStyle: "none", padding: "0", margin: "0" }}>
                      {Array.from({ length: maxYear - minYear + 1 }, (_, index) => (
                         <li onClick={(e) => {

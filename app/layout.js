@@ -48,20 +48,20 @@ export default async function RootLayout({ children }) {
         <Toaster />
         <AppProvider>
 
-            <Header auth={session}>
+            {session ?<Header auth={session}>
               <form action={useSignOut}>
                 <a href="#">
                   <span className="material-icons-sharp">logout</span>
 
-                  <button style={{ backgroundColor: "white", border: "0" }}>
+                  <button style={{ backgroundColor: "transparent", border: "0" }}>
                     <h3> Logout</h3>
                   </button>
                 </a>
               </form>
-            </Header>
+            </Header>:null}
     
           <div className={` container`}>
- <Profile session={session} data={teacher} />
+ {session ?<Profile session={session} data={teacher} />:null}
             {children}
           </div>
         </AppProvider>

@@ -21,7 +21,7 @@ function TableTeachers({ setClass ,checkedClasses, setCheckedClasses,classes, ex
       const date = getCurrentDateFormatted();
       return { ...item, Date: date };
    });
-   console.log(classes,newClasses, "hello world");
+
 
 
    const newExtraClasses = extraClasses.map((item) => {

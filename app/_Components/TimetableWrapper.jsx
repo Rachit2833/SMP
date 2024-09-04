@@ -7,6 +7,7 @@ import Loader from "./Loader";
 import Controls from "./Controls";
 
 function TimetableWrapper() {
+
    const [dayMutator, setDayMutator] = useState(0);
 
    const currentDate = new Date();

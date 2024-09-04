@@ -8,7 +8,7 @@ function Profile({ session,data }) {
    const { sideProfile, setSideProfile } = provider;
 
    const pathname = usePathname(); // Get the current path
-   console.log(data,"data here");
+
   
 
    return (

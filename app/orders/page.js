@@ -132,7 +132,7 @@ async function Page({ searchParams }) {
             gap: "1rem",
           }}
         >
-          <Calendar className="cal" />
+          <Calendar className="cals" />
           <ToDoList />
         </div>
       </div>

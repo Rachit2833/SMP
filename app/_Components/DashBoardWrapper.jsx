@@ -16,7 +16,6 @@ function DashBoardWrapper({ children,type,studentList, subjects, leave, classes,
    const [attendanceData, setAttendanceData] = useState([]);
    const [isClass, setClass] = useState();
    const searchParams = useSearchParams();
-   console.log(studentList[1].student_id ===Number("12345678"),studentList,"  hj hvhbjkhh");
    const handleAttendanceChange = (studentId, status) => {
       setAttendanceData(prevData => {
          const existingEntry = prevData.find(entry => entry.studentId === studentId);

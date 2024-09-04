@@ -53,7 +53,6 @@ function LeaveRequest({data}) {
                   <th style={{ padding: "0.5rem", textAlign: "center" }}></th>
                </tr>
                 {data.filter((item)=>{
-                  console.log(item);
                    return item.Status ==="Applied"
                 }).map((item)=>{
                   return <>

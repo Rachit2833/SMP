@@ -39,7 +39,6 @@ function Subject({ attendance,data }) {
    const enData = data.EnrolledDetails.filter((item)=>{
       return item.studentId===1
    })
-   console.log(enData);
 
    return (
       <div style={{ position: "relative" }} className={`${data?.Tag} `}>

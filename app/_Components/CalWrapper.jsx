@@ -80,6 +80,7 @@ return (
             </Modal>
          )}
          <Calendar fromDate={fromDate} setFromDate={setFromDate} toDate={toDate} setToDate={setToDate} extraClasse={extraClasse} events={events} classes={classes} currentDate={currentDate} setCurrentDate={setCurrentDate} />
+        
       </main>
 
         <div style={{}} className="right">
@@ -100,7 +101,9 @@ return (
          </button>
 
          {dropMenu && (
-            <div style={{
+            <div
+               className="one"
+               style={{
                position: "absolute",
                border: "1px solid rgba(132, 139, 200, 0.18)",
                boxShadow: "0 2rem 3rem rgba(132, 139, 200, 0.18)",
@@ -109,7 +112,7 @@ return (
                zIndex: "10",
                padding: "1rem",
                borderRadius: "15px",
-               backgroundColor: "white"
+
             }}>
                <DropMenu data="Schedule Class" onClick={() => handleOpenModal("Class")} />
                <DropMenu data="Schedule Event" onClick={() => handleOpenModal("Event")} />

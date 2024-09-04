@@ -4,6 +4,7 @@ import { Children, useState } from "react"
 import { useAppContext } from "../_Lib/AppProvider";
 import { usePathname } from "next/navigation";
 import logo  from "../../public/logo.png"
+import Link from "next/link";
 function Header({children,auth}) {
    
    const provider = useAppContext()
@@ -23,14 +24,14 @@ function Header({children,auth}) {
             <h2>U<span className="danger">M</span>S</h2>
          </div>
          <div className="navbar">
-            <a href="index.html" className="active">
+            <Link href="/" className={`${pathname==="/" || pathname==="/orders"  ? "active":null}`}>
                <span className="material-icons-sharp">home</span>
                <h3>Home</h3>
-            </a>
-            <a href="timetable.html" onClick={() => timeTableAll()}>
+            </Link>
+            <Link className={`${pathname === "/timetable" || pathname === "/terms" ? "active" : null}`} href={auth.user.Designation === "Teacher"? "/terms":"/timetable"}>
                <span className="material-icons-sharp">today</span>
-               <h3>Time Table</h3>
-            </a>
+               <h3>{auth.user.Designation === "Teacher" ? "Academics"  : "Time Table"}</h3>
+            </Link>
             {children}
          </div>
          <div id="profile-btn">

@@ -23,7 +23,11 @@
     --color-dark-varient: #a3bdcc;
     --color-light: rgba(0, 0, 0, 0.4);
     --box-shadow: 0 2rem 3rem var(--color-light);
+}.one{
+    background-color:var(--color-background) ;
 }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -598,4 +602,13 @@ main .timetable.active .closeBtn {
 .logo {
   height: 1.5rem; /* 24px */
   width: 1.5rem; /* 24px */
+}
+.react-calendar__navigation__label__labelText, .react-calendar__navigation__label__labelText--from{
+    /* color: black !important; */
+}
+.react-calendar__navigation button:enabled:hover{
+    background-color: #4caf50 !important;
+}
+.cals button:hover{
+    background-color: #4caf50 !important;
 }
