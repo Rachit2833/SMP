@@ -8,8 +8,8 @@ export async function middleware(req) {
 
 
 
-   const restrictedRoutesForStudents = ["/orders", "/terms"];
-   const restrictedRoutesForTeachers = ["/", "/product","/timetable"]; // Example routes
+   const restrictedRoutesForStudents = ["/educator-home", "/academicScheduler", "/educator-home/:path*"];
+   const restrictedRoutesForTeachers = ["/", "/assignments", "/timetable"]; // Example routes
 
    const url = req.nextUrl.clone();
 
@@ -36,7 +36,7 @@ export async function middleware(req) {
      userDesignation === "Teacher" &&
      restrictedRoutesForTeachers.includes(url.pathname)
    ) {
-     return NextResponse.redirect(new URL("/orders", req.url));
+     return NextResponse.redirect(new URL("/educator-home", req.url));
    }
 
    return NextResponse.next();
@@ -45,10 +45,10 @@ export async function middleware(req) {
 export const config = {
   matcher: [
     "/",
-    "/terms",
-    "/product",
+    "/academicScheduler",
+    "/assignments",
     "/timetable",
-    "/orders",
-    "/orders/:path*"
+    "/educator-home",
+    "/educator-home/:path*",
   ],
 };

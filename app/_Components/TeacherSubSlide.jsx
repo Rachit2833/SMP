@@ -8,7 +8,7 @@ function TeacherSubSlide({ data, index,}) {
    const router = useRouter()
    return (
       <div onClick={()=>{
-         router.push(`/orders/${data.Name}`)
+         router.push(`/educator-home/${data.Name}`)
       }}
          className="box"
          style={{

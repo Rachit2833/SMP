@@ -7,7 +7,7 @@ function PlusIcon() {
    return (
       <div>
          <div onClick={()=>{
-            router.push("/terms")
+            router.push("/academicScheduler")
          }} style={{ display: "flex", justifyContent: "center", }}>
             <h2 style={{ fontSize: "4rem" }}><ion-icon name="add-circle-outline"></ion-icon></h2>
          </div>
