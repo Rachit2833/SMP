@@ -6,7 +6,7 @@ import { auth } from "./app/_Lib/auth";
 export async function middleware(req) {
   const session = await auth();
 
-  console.log("Session:", session);
+
 
    const restrictedRoutesForStudents = ["/orders", "/terms"];
    const restrictedRoutesForTeachers = ["/", "/product","/timetable"]; // Example routes
@@ -24,7 +24,7 @@ export async function middleware(req) {
 
    // Block routes for students
    if (
-     userDesignation === "Student" &&
+   session && userDesignation === "Student"  &&
      restrictedRoutesForStudents.includes(url.pathname)
    ) {
      return NextResponse.redirect(new URL("/", req.url));
@@ -32,6 +32,7 @@ export async function middleware(req) {
 
    // Block routes for teachers
    if (
+     session &&
      userDesignation === "Teacher" &&
      restrictedRoutesForTeachers.includes(url.pathname)
    ) {
@@ -42,5 +43,12 @@ export async function middleware(req) {
 }
 
 export const config = {
-  matcher: ["/store", "/", "/terms", "/product", "/timetable", "/orders"],
+  matcher: [
+    "/",
+    "/terms",
+    "/product",
+    "/timetable",
+    "/orders",
+    "/orders/:path*"
+  ],
 };
