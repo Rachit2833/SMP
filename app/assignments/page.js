@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata = {
   title: "Assignments",
   description:
-    "Luxurious cabin hotel, located in the heart of the Italian Dolomites, surrounded by beautiful mountains and dark forests",
+    "Assignment Submition page",
 };
 async function page() {
   return (
