@@ -16,7 +16,9 @@ const departments = [
   "Nuclear Science and Engineering",
   "Biological Engineering",
 ];
-
+export const metadata = {
+  title: "College-Info",
+};
 async function Page() {
 
   

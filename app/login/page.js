@@ -1,6 +1,9 @@
 import Image from "next/image";
 import SignInButton from "../_Components/SignInButton";
 import imgs from "@/public/logo.png"
+export const metadata = {
+  title: "Login",
+};
 function page() {
    return (
      <main style={{ gridColumn: " span 3", marginTop: "0",}}>

@@ -4,7 +4,19 @@ import bg from "@/public/bg.webp";
 import bg2 from "@/public/im.jpeg";
 import Image from "next/image";
 import profilePicture from "@/public/abc.jpg";
+export async function generateMetadata({ params }) {
+  const teacherData = await getTeachers();
+  const teacher = teacherData.find(
+    (item) => item.id === Number(params.teacherId)
+  );
 
+  return {
+    title: `Profile - ${teacher ? teacher.Name : "Teacher"}`, // Set dynamic title
+    description: teacher
+      ? `Learn more about ${teacher.Name}, ${teacher.Department} at our university.`
+      : "Teacher profile page",
+  };
+}
 async function Page({params}) {
   let teacherData=await getTeachers() 
    teacherData=teacherData.filter((item)=>{

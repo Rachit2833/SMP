@@ -20,8 +20,11 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
 
+<video width="600" >
+  <source src="https://gemoo.com/tools/upload-video/share/690227066948632576?codeId=M01ZoJ7bOzy9N&card=690227062875963392&origin=videolinkgenerator" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 ## Key Features
 
 * LivePreview - Make changes, See changes
@@ -48,16 +51,13 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
-
-# Go into the repository
-$ cd electron-markdownify
+$ git clone https://github.com/Rachit2833/SMP2.0-Refactored-With-Next-Js
 
 # Install dependencies
 $ npm install
 
 # Run the app
-$ npm start
+$ npm run dev
 ```
 
 > **Note**
