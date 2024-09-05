@@ -24,11 +24,11 @@ function Header({children,auth}) {
             <h2>U<span className="danger">M</span>S</h2>
          </div>
          <div className="navbar">
-            <Link href="/" className={`${pathname==="/" || pathname==="/orders"  ? "active":null}`}>
+            <Link href="/" className={`${pathname === "/" || pathname ==="/educator-home"  ? "active":null}`}>
                <span className="material-icons-sharp">home</span>
                <h3>Home</h3>
             </Link>
-            <Link className={`${pathname === "/timetable" || pathname === "/terms" ? "active" : null}`} href={auth.user.Designation === "Teacher"? "/terms":"/timetable"}>
+            <Link className={`${pathname === "/timetable" || pathname === "/academicScheduler" ? "active" : null}`} href={auth.user.Designation === "Teacher" ? "/academicScheduler":"/timetable"}>
                <span className="material-icons-sharp">today</span>
                <h3>{auth.user.Designation === "Teacher" ? "Academics"  : "Time Table"}</h3>
             </Link>

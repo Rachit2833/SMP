@@ -129,7 +129,7 @@ async function Page() {
             <Link
               key={index}
               className="link"
-              href={`/store/${department
+              href={`/college-info/${department
                 .toLowerCase()
                 .replace(/ & | /g, "-")}`}
               style={{
