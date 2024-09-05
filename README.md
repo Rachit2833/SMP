@@ -21,10 +21,8 @@
 </p>
 
 
-<video width="600" >
-  <source src="https://gemoo.com/tools/upload-video/share/690227066948632576?codeId=M01ZoJ7bOzy9N&card=690227062875963392&origin=videolinkgenerator" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/12ed5512-38ae-4f30-91af-2e1ee9574c86
+
 ## Key Features
 
 * LivePreview - Make changes, See changes
@@ -51,13 +49,16 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Rachit2833/SMP2.0-Refactored-With-Next-Js
+$ git clone https://github.com/amitmerchant1990/electron-markdownify
+
+# Go into the repository
+$ cd electron-markdownify
 
 # Install dependencies
 $ npm install
 
 # Run the app
-$ npm run dev
+$ npm start
 ```
 
 > **Note**
@@ -97,7 +98,6 @@ This software uses the following open source packages:
 <a href="https://www.patreon.com/amitmerchant">
 	<img src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png" width="160">
 </a>
-
 
 
 
