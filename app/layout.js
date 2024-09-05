@@ -9,6 +9,7 @@ import { auth, signOut } from "./_Lib/auth";
 import { useSignOut } from "./_Lib/actions";
 import { getTeachersInd } from "./_Lib/getTeachers";
 import { getStudent } from "./_Lib/getStudent";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // const Profile = lazy(() => import("./_Components/Profile")); 
 import Profile from "./_Components/Profile";
 export const metadata = {
@@ -63,6 +64,7 @@ export default async function RootLayout({ children }) {
           <div className={` container`}>
  {session ?<Profile session={session} data={teacher} />:null}
             {children}
+            <SpeedInsights />
           </div>
         </AppProvider>
       </body>
