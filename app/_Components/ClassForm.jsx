@@ -47,7 +47,7 @@ function ClassForm({ setIsActiveModal, currentDate }) {
    };
 
    return (
-      <form onSubmit={handleSubmit} style={{ margin: "2rem 1rem" }}>
+      <form  onSubmit={handleSubmit} style={{ margin: "2rem 1rem" }}>
          <div style={{ position: "relative", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", margin: "1rem 0" }}>
             <select name="subject" id="options" value={selectedSubject} onChange={handleChangeSubject} required>
                <option value="">Subjects</option>

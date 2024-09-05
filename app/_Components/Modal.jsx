@@ -3,8 +3,8 @@
 function Modal({ type,currentDate, isactiveModal , setIsActiveModal,children }) {
    
    return (
-      <div class="modal">
-         <div class="modal-content" style={{
+      <div class="modal  ">
+         <div class="modal-content one" style={{
             borderRadius: "25px", boxShadow: "0 2rem 3rem rgba(132, 139, 200, 0.18)",
             border: "1px solid  rgba(132, 139, 200, 0.18) ",
 }}>
