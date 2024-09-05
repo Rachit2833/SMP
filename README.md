@@ -21,7 +21,7 @@
 </p>
 
 
-https://github.com/user-attachments/assets/e9a97c28-022d-4a5e-b536-2fcf2511b1cc 
+https://github.com/user-attachments/assets/12ed5512-38ae-4f30-91af-2e1ee9574c86
 
 ## Key Features
 
