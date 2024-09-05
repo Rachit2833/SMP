@@ -22,6 +22,9 @@ export const revalidate = 0;
 const inter = Inter({
   subsets: ["latin"],
 });
+export const metadata = {
+  title: "Educator-Home",
+};
 
 function formatDate(date) {
   const d = new Date(date);

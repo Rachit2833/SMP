@@ -1,6 +1,8 @@
 import TimetableWrapper from "../_Components/TimetableWrapper";
 
-
+export const metadata = {
+  title: "Timetable",
+};
 function page() {
   return (
     <>
