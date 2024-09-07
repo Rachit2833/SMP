@@ -57,15 +57,22 @@ export default async function RootLayout({ children }) {
           {session ? (
             <Header auth={session}>
               <form action={useSignOut}>
-                <p>
-                  <span className="material-icons-sharp">logout</span>
-
+                <a href="#">
                   <button
+                    className="material-icons-sharp"
                     style={{ backgroundColor: "transparent", border: "0" }}
                   >
-                    <h3> Logout</h3>
+                    logout
                   </button>
-                </p>
+
+                  <h3>
+                    <button
+                      style={{ backgroundColor: "transparent", border: "0" }}
+                    >
+                      Logout
+                    </button>
+                  </h3>
+                </a>
               </form>
             </Header>
           ) : null}
