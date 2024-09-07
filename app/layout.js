@@ -47,21 +47,31 @@ export default async function RootLayout({ children }) {
       <body className={inter.className}>
         <Toaster />
         <AppProvider>
-
-            {session ?<Header auth={session}>
+          {session ? (
+            <Header auth={session}>
               <form action={useSignOut}>
                 <a href="#">
-                  <span className="material-icons-sharp">logout</span>
-
-                  <button style={{ backgroundColor: "transparent", border: "0" }}>
-                    <h3> Logout</h3>
+                  <button
+                    className="material-icons-sharp"
+                    style={{ backgroundColor: "transparent", border: "0" }}
+                  >
+                    logout
                   </button>
+
+                  <h3>
+                    <button
+                      style={{ backgroundColor: "transparent", border: "0" }}
+                    >
+                      Logout
+                    </button>
+                  </h3>
                 </a>
               </form>
-            </Header>:null}
-    
+            </Header>
+          ) : null}
+
           <div className={` container`}>
- {session ?<Profile session={session} data={teacher} />:null}
+            {session ? <Profile session={session} data={teacher} /> : null}
             {children}
           </div>
         </AppProvider>
