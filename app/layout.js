@@ -13,6 +13,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 // const Profile = lazy(() => import("./_Components/Profile")); 
 import Profile from "./_Components/Profile";
 import Head from "next/head";
+import Link from "next/link";
 const inter = Inter({
   subsets: ["latin"],
 });
@@ -56,7 +57,7 @@ export default async function RootLayout({ children }) {
           {session ? (
             <Header auth={session}>
               <form action={useSignOut}>
-                <a href="#">
+                <p>
                   <span className="material-icons-sharp">logout</span>
 
                   <button
@@ -64,7 +65,7 @@ export default async function RootLayout({ children }) {
                   >
                     <h3> Logout</h3>
                   </button>
-                </a>
+                </p>
               </form>
             </Header>
           ) : null}
